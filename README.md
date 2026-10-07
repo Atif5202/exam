@@ -15,6 +15,7 @@ Application Laravel : livres, adhérents, emprunts et retours, tableau de bord.
 ```sh
 cd d:\www\examen\laravel
 composer install
+npm install
 cp .env.example .env
 php artisan key:generate
 ```
@@ -23,6 +24,7 @@ Créer la base MySQL `examen` (vide), puis :
 
 ```sh
 php artisan migrate --seed
+npm run build
 php artisan serve
 ```
 
