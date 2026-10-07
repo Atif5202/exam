@@ -10,7 +10,6 @@ npm install
 cp .env.example .env
 php artisan key:generate
 
-
 Créer la base MySQL `examen`, puis :
 php artisan migrate --seed
 npm run build
@@ -20,7 +19,7 @@ Ouvrir http://localhost:8000.
 
 ## Compte et données de test
 
-- Email : `atif@bibliotech.com`
+- Email : `bibliothecaire@example.com`
 - Mot de passe : `bibliothecaire`
 
 
