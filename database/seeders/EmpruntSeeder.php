@@ -14,9 +14,9 @@ class EmpruntSeeder extends Seeder
 
     public function run(): void
     {
-        $livre1 = Livre::where('isbn', '978-2-0814-0000-0')->first();
-        $livre2 = Livre::where('isbn', '978-2-0703-0000-0')->first();
-        $livre3 = Livre::where('isbn', '978-2-0702-0000-0')->first();
+        $livre1 = Livre::where('isbn', '978-2-84280-119-9')->first();
+        $livre2 = Livre::where('isbn', '978-2-916362-32-8')->first();
+        $livre3 = Livre::where('isbn', '978-2-916362-00-7')->first();
 
         $adherent1 = Adherent::where('email', 'atif.rakoto@example.com')->first();
         $adherent2 = Adherent::where('email', 'zoky.mpidrana@example.com')->first();

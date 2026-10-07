@@ -44,7 +44,7 @@ class ReglesGestionTest extends TestCase
     public function test_r5_suppression_bloquee()
     {
         $this->login();
-        $livre = Livre::where('isbn', '978-2-0814-0000-0')->first();
+        $livre = Livre::where('isbn', '978-2-84280-119-9')->first();
         $this->delete('/livres/' . $livre->id)->assertSessionHas('error');
         $this->assertDatabaseHas('livres', ['id' => $livre->id]);
         $adherent = Adherent::where('email', 'atif.rakoto@example.com')->first();
@@ -58,7 +58,7 @@ class ReglesGestionTest extends TestCase
     public function test_r6_quantite_totale_bloquee()
     {
         $this->login();
-        $livre = Livre::where('isbn', '978-2-0814-0000-0')->first();
+        $livre = Livre::where('isbn', '978-2-84280-119-9')->first();
         $reponse = $this->put('/livres/' . $livre->id, [
             'titre' => $livre->titre,
             'auteur' => $livre->auteur,
@@ -75,7 +75,7 @@ class ReglesGestionTest extends TestCase
         $this->login();
         $this->post('/livres', [])->assertSessionHasErrors(['titre', 'auteur', 'isbn', 'quantite_totale']);
         $this->post('/livres', [
-            'titre' => 'T', 'auteur' => 'A', 'isbn' => '978-2-0814-0000-0', 'quantite_totale' => 1,
+            'titre' => 'T', 'auteur' => 'A', 'isbn' => '978-2-84280-119-9', 'quantite_totale' => 1,
         ])->assertSessionHasErrors(['isbn']);
         $this->post('/livres', [
             'titre' => 'T', 'auteur' => 'A', 'isbn' => 'NEG-1', 'quantite_totale' => -1,

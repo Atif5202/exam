@@ -122,7 +122,7 @@ class BibliotechTest extends TestCase
         $this->actingAs($user);
 
         $adherent = Adherent::where('email', 'atif.rakoto@example.com')->first();
-        $livre = \App\Models\Livre::where('quantite_disponible', '>', 0)->where('isbn', '!=', '978-2-0814-0000-0')->first();
+        $livre = \App\Models\Livre::where('quantite_disponible', '>', 0)->where('isbn', '!=', '978-2-84280-119-9')->first();
 
         $reponse = $this->post('/emprunts', [
             'livre_id' => $livre->id,

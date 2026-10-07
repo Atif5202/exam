@@ -13,17 +13,25 @@ class LivreSeeder extends Seeder
     public function run(): void
     {
         $livres = [
-            ['titre' => 'Le Petit Prince', 'auteur' => 'Antoine de Saint-Exupery', 'isbn' => '978-2-0814-0000-0', 'categorie' => 'Roman', 'annee' => 1943, 'quantite_totale' => 3, 'quantite_disponible' => 3],
-            ['titre' => '1984', 'auteur' => 'George Orwell', 'isbn' => '978-2-0703-0000-0', 'categorie' => 'Science-fiction', 'annee' => 1949, 'quantite_totale' => 2, 'quantite_disponible' => 2],
-            ['titre' => 'L\'Étranger', 'auteur' => 'Albert Camus', 'isbn' => '978-2-0702-0000-0', 'categorie' => 'Roman', 'annee' => 1942, 'quantite_totale' => 2, 'quantite_disponible' => 2],
-            ['titre' => 'Le Comte de Monte-Cristo', 'auteur' => 'Alexandre Dumas', 'isbn' => '978-2-2530-0000-0', 'categorie' => 'Roman', 'annee' => 1845, 'quantite_totale' => 1, 'quantite_disponible' => 1],
-            ['titre' => 'Les Misérables', 'auteur' => 'Victor Hugo', 'isbn' => '978-2-2531-0000-0', 'categorie' => 'Roman', 'annee' => 1862, 'quantite_totale' => 2, 'quantite_disponible' => 2],
-            ['titre' => 'La Guerre des Mondes', 'auteur' => 'H.G. Wells', 'isbn' => '978-2-0703-0001-0', 'categorie' => 'Science-fiction', 'annee' => 1898, 'quantite_totale' => 1, 'quantite_disponible' => 1],
-            ['titre' => 'Jane Eyre', 'auteur' => 'Charlotte Brontë', 'isbn' => '978-2-2530-0001-0', 'categorie' => 'Roman', 'annee' => 1847, 'quantite_totale' => 1, 'quantite_disponible' => 1],
-            ['titre' => 'Crime et Châtiment', 'auteur' => 'Fiodor Dostoïevski', 'isbn' => '978-2-0703-0002-0', 'categorie' => 'Roman', 'annee' => 1866, 'quantite_totale' => 2, 'quantite_disponible' => 2],
-            ['titre' => 'Le Hobbit', 'auteur' => 'J.R.R. Tolkien', 'isbn' => '978-2-2662-0000-0', 'categorie' => 'Fantasy', 'annee' => 1937, 'quantite_totale' => 3, 'quantite_disponible' => 3],
-            ['titre' => 'Dune', 'auteur' => 'Frank Herbert', 'isbn' => '978-2-2662-0001-0', 'categorie' => 'Science-fiction', 'annee' => 1965, 'quantite_totale' => 2, 'quantite_disponible' => 2],
-        ];
+['titre' => 'Sari-nofy', 'auteur' => 'Jean-Joseph Rabearivelo', 'isbn' => '978-2-84280-119-9', 'categorie' => 'Poésie', 'annee' => 2006, 'quantite_totale' => 3, 'quantite_disponible' => 3],
+
+['titre' => 'Risika sy Rahitsikitsika', 'auteur' => 'Ravelo, Rivo Randremba', 'isbn' => '978-2-916362-32-8', 'categorie' => 'Jeunesse', 'annee' => 2010, 'quantite_totale' => 2, 'quantite_disponible' => 2],
+
+['titre' => 'Maria Vakansy any Alaotra', 'auteur' => 'Marie-Michèle Rakotoanosy', 'isbn' => '978-2-916362-00-7', 'categorie' => 'Jeunesse', 'annee' => 2010, 'quantite_totale' => 2, 'quantite_disponible' => 2],
+
+['titre' => 'Maria Nahita ranomasina voalohany', 'auteur' => 'Marie-Michèle Rakotoanosy, Rado', 'isbn' => '978-2-916362-01-4', 'categorie' => 'Jeunesse', 'annee' => 2010, 'quantite_totale' => 1, 'quantite_disponible' => 1],
+
+['titre' => 'Rapeto sy Jejy voatavo', 'auteur' => 'Marthe Rasoanantenaina, Roddy', 'isbn' => '978-2-916362-03-8', 'categorie' => 'Jeunesse', 'annee' => 2010, 'quantite_totale' => 2, 'quantite_disponible' => 2],
+
+['titre' => 'Any am-pianarana', 'auteur' => 'Marie-Michèle Rakotoanosy', 'isbn' => '978-2-916362-10-6', 'categorie' => 'Éducation', 'annee' => 2010, 'quantite_totale' => 1, 'quantite_disponible' => 1],
+
+['titre' => 'Loko sy soratra', 'auteur' => 'Marie-Michèle Rakotoanosy, Fetra', 'isbn' => '978-2-916362-12-0', 'categorie' => 'Éducation', 'annee' => 2010, 'quantite_totale' => 1, 'quantite_disponible' => 1],
+
+['titre' => 'Loko sy marika', 'auteur' => 'Marie-Michèle Rakotoanosy, Fetra', 'isbn' => '978-2-916362-11-3', 'categorie' => 'Éducation', 'annee' => 2010, 'quantite_totale' => 2, 'quantite_disponible' => 2],
+
+['titre' => 'Antalaha le 26 juin 1960', 'auteur' => 'Cyprienne Toazara', 'isbn' => '978-2-916362-31-1', 'categorie' => 'Roman jeunesse', 'annee' => 2010, 'quantite_totale' => 3, 'quantite_disponible' => 3],
+
+['titre' => 'Nadika tamin’ny Alina', 'auteur' => 'Jean-Joseph Rabearivelo', 'isbn' => '978-2-84280-125-0', 'categorie' => 'Poésie', 'annee' => 2007, 'quantite_totale' => 2, 'quantite_disponible' => 2],        ];
 
         foreach ($livres as $l) {
             Livre::create($l);
