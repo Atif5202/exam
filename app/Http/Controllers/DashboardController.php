@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Adherent;
 use App\Models\Emprunt;
 use App\Models\Livre;
-use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {

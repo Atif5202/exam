@@ -2,10 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Adherent;
-use App\Models\Emprunt;
-use App\Models\Livre;
-use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
